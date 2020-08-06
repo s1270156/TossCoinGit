@@ -16,8 +16,6 @@ int main(){
   for(i=0;i<3;i++){
     int flag;
     flag = rand() % 2;
-
-    printf("%d\n", flag);
     
     switch(flag){
     case 0:
@@ -31,6 +29,9 @@ int main(){
   }
   
   printf("Heads: %d, Tails: %d\n",count,3-count);
+
+  if(count >= 2) printf("%s won!\n",name);
+  else printf("%s lost!\n",name);
   
   return 0;
 }
