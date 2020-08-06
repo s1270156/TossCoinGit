@@ -22,6 +22,7 @@ int main(){
       printf("Round %d: Heads\n",i+1);
       count++;
       break;
+      
     default:
       printf("Round %d: Tails\n",i+1);
       break;
